@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Matrizes Javascript</h1>
+
+    <h2>O método filter()</h2>
+
+    <p>O método filter() permite filtrar elementos de um array.</p>
+    <p id="demo">
+        << /p>
+</body>
+<script>
+    const ages = [32, 33, 16, 40];
+
+    document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+    function checkAdult(age) {
+        return age >= 18;
+    }
+</script>
+
+</html>
